@@ -1,0 +1,26 @@
+{
+  "name": "xpformsdatahandling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "node --watch app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itssduy/XPFormsDataHandling.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itssduy/XPFormsDataHandling/issues"
+  },
+  "homepage": "https://github.com/itssduy/XPFormsDataHandling#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1"
+  }
+}
