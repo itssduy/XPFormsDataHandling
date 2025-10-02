@@ -44,11 +44,6 @@ const validateUser = [
 
 ];
 
-exports.userGetSearch = [
-  
-]
-
-
 // We can pass an entire array of middleware validations to our controller.
 exports.usersCreatePost = [
   validateUser,
@@ -100,3 +95,18 @@ exports.usersDeletePost = (req, res) => {
   res.redirect("/");
 };
 
+
+
+exports.userGetSearch = (req, res)=>{
+  const fullName  = req.query.name;
+  const [firstName, lastName] = fullName.split(" ");
+
+  const users = usersStorage.getUserByName(firstName, lastName);
+  if(users && users.length > 0){
+    const user = users[0];
+    res.redirect(`/${user.id}/update`);
+  } else {
+    res.redirect("/");
+  }
+  
+}

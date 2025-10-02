@@ -2,6 +2,7 @@
 const express = require("express");
 const app = express();
 const path = require("node:path");
+
 const usersRouter = require("./routes/usersRouter");
 
 app.set("views", path.join(__dirname, "views"));

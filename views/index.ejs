@@ -8,10 +8,10 @@
   <h1><%= title %></h1>
   <!-- In views/index.ejs -->
 
-    <form>
-      <label for="search">Search for a user</label>
-      <input type="text" name="search" id="search">
-
+    <form action="/search" method="GET">
+      <label for="name">Search for a user by name</label>
+      <input type="text" name="name" id="name">
+      <button type="submit">Search</button>
     </form>
 
 
