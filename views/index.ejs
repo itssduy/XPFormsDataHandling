@@ -7,6 +7,14 @@
 <body>
   <h1><%= title %></h1>
   <!-- In views/index.ejs -->
+
+    <form>
+      <label for="search">Search for a user</label>
+      <input type="text" name="search" id="search">
+
+    </form>
+
+
     <ul>
     <% if (locals.users) {%>
         <% users.forEach(function(user) { %>
